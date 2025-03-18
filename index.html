@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 700px;
+            margin: 40px auto;
+        }
+        .card-white {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card-white:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .img-circle {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .list-inline {
+            list-style: none;
+            padding-left: 0;
+        }
+        .list-inline > li {
+            display: inline;
+            padding: 0 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .img-circle {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-white">
+            <!-- Chemin absolu de l'image avec les espaces remplacés par %20 -->
+            <img src="file:///Users/bestemma/Documents/Le%20wagon/image/emmaprofil.jpg" alt="Photo de profil d'Emma" class="img-circle">
+            <h2>Bienvenue sur le profil de Emma !</h2>
+            <p>Je suis une passionnée de communication et marketing et voici mon espace personnel.</p>
+            <a href="#" class="btn">En savoir plus</a>
+        </div>
+        <div class="card-white">
+            <h3>À propos de moi</h3>
+            <p>Je m'appelle Emma, je suis en deuxième année de Bachelor en Management à ICN Business School sur le campus de Nancy.</p>
+        </div>
+        <div class="card-white">
+            <h3>Mes projets</h3>
+            <p>J'ai travaillé sur des projets de communication, comme la création d'une image de marque sur un réseau social.</p>
+        </div>
+        <div class="card-white">
+            <h3>Contact</h3>
+            <p>N'hésitez pas à me contacter pour toute collaboration !</p>
+        </div>
+        <div class="card-white">
+            <ul class="list-inline">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mon Profil - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
